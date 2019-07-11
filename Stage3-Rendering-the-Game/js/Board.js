@@ -23,4 +23,13 @@ class Board {
   	}
     return spaces;
   }
+
+  drawHTMLBoard() {
+    // for each element of an array
+    for (let column of this.spaces) {
+      for (let space of column) {
+        space.drawSVGSpace();
+      }
+    }
+  }
 }
