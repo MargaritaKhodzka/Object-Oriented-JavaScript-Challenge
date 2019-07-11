@@ -18,6 +18,11 @@ class Game {
   }
 
   startGame() {
-    
+
+  }
+
+  // return the Player whose active property is equal to true
+  get activePlayer() {
+    return this.players.find(player => player.active);
   }
 }
