@@ -5,9 +5,7 @@ class Token {
     this.dropped = false;
   }
 
-  /*
-    Draws new HTML token
-  */
+  // Draw new HTML token
 
   drawHTMLToken() {
     const token = document.createElement('div');

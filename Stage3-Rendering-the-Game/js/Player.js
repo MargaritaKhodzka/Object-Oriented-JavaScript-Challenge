@@ -27,7 +27,7 @@ class Player {
     dropped properties are equal to false
   */
   get unusedTokens() {
-    this.tokens.filter(token => !token.dropped);
+    return this.tokens.filter(token => !token.dropped);
   }
 
   // return the first Token object in the unusedTokens array
