@@ -34,12 +34,13 @@ class Space {
     @return {(null|Object)} Returns null or the owner object of the space's associated token
   */
   get owner() {
-    if (this.token) {
+    if (this.token === null) {
       return this.token.owner;
     } else {
       return null;
     }
   }
+
   /*
     Checks if there a winner on the board after each token drop
     @param   {Object}    Targeted space for dropped token
